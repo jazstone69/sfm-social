@@ -1,0 +1,24 @@
+# Weekly run: Stone Familia Media research + social drafts
+
+Runs every Monday morning (America/Denver). Owner: Sage Stone, JStone_SFM@pm.me.
+Read research-agent.md and social-media-agent.md in this folder first; they hold the business context and rules.
+
+## Steps
+1. **Research.** Do the weekly research in research-agent.md (web search). Skip anything already covered in previous reports in `reports/`.
+2. **Write the report** to `reports/<YYYY-MM-DD>.md`: the short version (3-4 findings), competitor changes, 1-3 growth ideas with post hooks, sources as links.
+3. **Draft 2 posts** following social-media-agent.md: 1 for content creators (Prompt Studio / Pro first), 1 for work crews (JHA form), unless the research gives a strong reason to swap. Friendly and funny voice. Don't repeat hooks used in earlier weeks (check `posts/`).
+4. **Make slides.** Edit the `prompt` and `jha` slide arrays in slide-generator.js (rename the arrays/filenames if the topic changes), then run `node agents/slide-generator.js slides/<next-Monday-date>` from the repo root. Look at every slide image to check nothing overflows or overlaps.
+5. **Save** the captions to `posts/<next-Monday-date>.md`, then commit slides, report, and posts to main and push.
+6. **Buffer drafts.** Organization "My organization". Create DRAFTS ONLY (saveToDraft: true), never schedule or publish:
+   - Facebook page (type post): 5 slides.
+   - X: 4 slides max (skip slide 2).
+   - TikTok: 5 slides.
+   Images by raw URL: https://raw.githubusercontent.com/jazstone69/sfm-social/main/slides/<date>/<file>.png (confirm each returns 200 before attaching).
+7. **Email** JStone_SFM@pm.me via Gmail, subject "SFM weekly: research + 2 posts for week of <date>", HTML body with:
+   - the research short version and growth ideas,
+   - both posts' captions and links to slide 1 of each,
+   - a note: "6 drafts are waiting in Buffer. Open each, check it, and schedule it (suggested Tue and Thu 10am). Nothing goes out until you do."
+   Send nothing to anyone else.
+
+## Never
+- Publish or schedule posts. Contact anyone besides the owner. Make claims about the products that aren't on stonefamiliamedia.com.
