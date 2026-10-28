@@ -23,5 +23,8 @@ Read research-agent.md and social-media-agent.md in this folder first; they hold
    - a note: "6 drafts are waiting in Buffer. Open each, check it, and schedule it (suggested Tue and Thu 10am). Nothing goes out until you do."
    Send nothing to anyone else.
 
+## Tools
+- Use Buffer for all social scheduling and drafts, including any post that promotes the weekly blog. Do not use Postiz or any other scheduler.
+
 ## Never
 - Publish or schedule posts. Contact anyone besides the owner. Make claims about the products that aren't on stonefamiliamedia.com.
