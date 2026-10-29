@@ -4,7 +4,7 @@ Runs every Monday as part of WEEKLY.md, before the email step. Mailbox: the conn
 Job: find people who asked about Stone Familia Media in the last 7 days and leave a reply DRAFT for the owner in Gmail Drafts. It never sends.
 
 ## 1. Find leads
-The owner's business mail lives in Proton (privacysfm@pm.me) and is auto-forwarded to this Gmail, so most leads arrive as forwarded copies. For each one, reply to the ORIGINAL sender (the person who wrote in), never to a pm.me address. Ignore Proton system mail (proton.me) and the owner's own weekly email.
+The owner's business mail lives in Proton (privacysfm@pm.me and JStone_SFM@pm.me) and is auto-forwarded to this Gmail, so most leads arrive as forwarded copies. For each one, reply to the ORIGINAL sender (the person who wrote in), never to a pm.me address. Ignore Proton system mail (proton.me) and the owner's own weekly email.
 Search Gmail for the last 8 days (`newer_than:8d`), excluding the owner's own mail, promotions, social, updates and forums tabs, and automated senders (noreply, no-reply, notifications, newsletters, job alerts). Also include website notifications from stonefamiliamedia.com (form submissions, orders, booking requests) even if they land in Updates.
 Open each candidate with get_thread and keep it only if a real person is asking about one of:
 - Prompt Studio or Prompt Studio Pro ($19)
