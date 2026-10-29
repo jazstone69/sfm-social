@@ -28,10 +28,18 @@ Use create_draft with `replyToMessageId` set to the person's latest message, `to
 Private Google Sheet "SFM Lead & Sales Tracker" in the owner's Drive, spreadsheet ID `11nQOfZVeGTST6E3vNxoHN6Zmon5meWz_pZ3Xw_3D-Qo`.
 - Read the Leads tab first. If a row already has this Gmail thread link, don't add it again.
 - Append one row per new lead to `Leads!A:J`: Date (YYYY-MM-DD the person wrote), First name, Email, Asked about (one short line), Product (one of: Prompt Studio, Prompt Studio Pro, JHA form, Logo design, History video, Intro call, Other), Came from (Proton, Website form, or Gmail), Status `New`, Sale $ blank, Gmail thread link, Notes ("Needs you" if flagged).
-- Never change or delete rows that are already there. The owner updates Status and Sale $ by hand.
+- Never change or delete rows that are already there (the one exception is the Notes note in step 4). The owner updates Status and Sale $ by hand.
 - Then read `Summary!A1:C6` for the scoreboard numbers.
 
-## 4. Report
+## 4. Follow-up reminders
+Using the Leads tab (dates count from the Date column, in America/Denver time):
+- **Waiting on you:** Status `New` and 3+ days old. The owner hasn't answered yet. List these in the email so nothing slips. Don't draft anything new for them (their first reply draft already exists).
+- **Gone quiet:** Status `Replied` and 5+ days old, and the Gmail thread has no newer message from the lead. Save ONE short check-in draft in that thread (create_draft, same rules as step 2, 30 to 70 words, friendly, no pressure, one link). Example tone: "Hey Sam, just checking in on the JHA form. Happy to answer anything, or no worries if the timing's off!"
+- One check-in per lead, ever. Before drafting, check the Notes column; if it already says "Follow-up drafted", skip. After drafting, add `Follow-up drafted <YYYY-MM-DD>` to the end of that row's Notes cell. That is the ONLY edit allowed to an existing row.
+- **Probably cold:** Status `Replied`, a follow-up was drafted 10+ days ago, and still no answer. Suggest in the email that the owner mark it `No sale`. Don't change it yourself.
+The owner replies from Proton, which Gmail can't see, so trust the Status column over Gmail for whether the owner replied.
+
+## 5. Report
 In the weekly email, add a "Leads this week" section near the top:
 - One scoreboard line from the Summary tab, e.g. "This month: 3 leads, 1 sale, $19. All time: 5 leads, 2 sales."
 - How many leads were found this week and how many reply drafts were made.
@@ -39,6 +47,8 @@ In the weekly email, add a "Leads this week" section near the top:
 - For each lead: first name, what they asked about (one line), "Needs you" if flagged, and a link to the thread.
 - Under each lead, the full reply text, so the owner can copy it into Proton and answer from the business address.
 - If none: "No new leads in Gmail this week."
+- A "Follow-ups" list: Waiting on you (name, product, days waiting), Gone quiet (name, product, the check-in text to paste into Proton), and Probably cold (suggest marking No sale).
+- A reminder: "Mark leads Replied in the tracker after you answer them, so I know who to follow up with."
 - End with: "Your reply drafts are in Gmail > Drafts, and the text is above if you'd rather reply from Proton. Nothing went out."
 
 ## Never
