@@ -26,8 +26,10 @@ Read results-check.md, research-agent.md, social-media-agent.md and lead-catcher
    - the full JHA blog post, ready to paste into the website,
    - a note: "6 drafts are waiting in Buffer. Open each, check it, and schedule it (suggested Tue and Thu 10am). Nothing goes out until you do."
    Send nothing to anyone else.
+11. **Copy to the owner's Mac.** The owner's main work folder is `/Users/jazstone/Claude/projects`. If their device folder is connected, copy this week's outputs into `Social media SFM/Agents/` there: slides to `Slides/<date>/`, captions to `Posts/`, report to `Reports/`, results to `Results/`, and the blog to `Blogs/`. Convert reports and blogs to LibreOffice .odt (`pandoc in.md -o out.odt`), since the owner uses LibreOffice, not Word. If the device isn't connected, say so in the email and skip this step.
 
 ## Tools
+- Document files for the owner are LibreOffice formats (.odt, .ods), never .docx.
 - Use Buffer for all social scheduling and drafts, including any post that promotes the weekly blog. Do not use Postiz or any other scheduler.
 
 ## Never
