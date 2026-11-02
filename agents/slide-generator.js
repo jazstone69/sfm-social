@@ -25,23 +25,21 @@ p{font-size:42px;line-height:1.35;color:#e6dcc4}
 const deco = `<div class="frame"></div><div class="dia" style="left:70px;top:58px">✦</div><div class="dia" style="right:70px;bottom:110px">✦</div>`;
 const foot = `<div class="foot">STONE FAMILIA MEDIA ✦ STORIES WORTH PASSING DOWN</div>`;
 const prompt = [
-`<h1>I typed <span class="gold">"cool knight"</span> into an AI video tool.</h1><p>Here's what I got. 👇</p>`,
-`<div class="big">🫤</div><h1>Meet <span class="gold">Sir Mid-a-lot.</span></h1><p>Generic armor. Standing there. Zero story. The AI did exactly what I asked… which was nothing.</p>`,
-`<h2>So I opened <span class="gold">Prompt Studio.</span></h2><p>It asked me the questions I forgot to answer:</p>
-<div class="box"><div class="row"><span class="lab">Who is he?</span><span class="val">Last guardian of a fortress</span></div><div class="row"><span class="lab">Where?</span><span class="val">Flooded desert ruins</span></div><div class="row"><span class="lab">When?</span><span class="val">Golden hour</span></div><div class="row"><span class="lab">Camera?</span><span class="val">Slow dolly-in, low angle</span></div></div>`,
-`<h2>Then it wrote the prompt <span class="gold">for me</span> ✅</h2>
-<div class="box mono">A weary knight in dented bronze armor, last guardian of a flooded desert fortress, golden hour light, wind tugging a torn red cape, slow dolly-in from a low angle, cinematic, 35mm film look.</div><p>Same idea. <b class="gold">Ten times the story.</b></p>`,
-`<h1>Prompt Studio is <span class="gold">free.</span></h1><p>Want characters, backstories, and whole worlds? <b>Prompt Studio Pro is $19.</b></p><div class="box" style="text-align:center;font-weight:800">stonefamiliamedia.com/prompt-studio</div><p>Save this for your next AI video. 🔖</p>`];
+`<div class="big">😵‍💫</div><h1>My AI knight had a <span class="gold">new face</span> in every clip.</h1><p>Same idea. Three different guys. 👇</p>`,
+`<h2>What went wrong?</h2><p>I described him a little differently every time.</p><div class="list">Clip 1: "brave knight"<br>Clip 2: "tired knight, red cape"<br>Clip 3: "old soldier in armor"</div><p>The AI took that <b class="gold">personally.</b></p>`,
+`<h2>The fix: write the character <span class="gold">once.</span></h2><p>Keep the same description word for word. Change only the scene.</p><div class="box"><div class="row"><span class="lab">Character</span><span class="val">Stays the same</span></div><div class="row"><span class="lab">Gear</span><span class="val">Stays the same</span></div><div class="row"><span class="lab">Scene + action</span><span class="val">Changes</span></div></div>`,
+`<h2>Sir Mid-a-lot, <span class="gold">upgraded</span> ✅</h2><div class="box mono">Weary knight, dented bronze armor, torn red cape, chipped tooth, lucky coin.</div><div class="list" style="font-size:40px">Mon: guards the gate 🏰<br>Tue: finds a stranger 🧭<br>Wed: the storm hits ⛈️</div>`,
+`<h1>Prompt Studio <span class="gold">Pro</span> builds characters, backstories, worlds &amp; gear.</h1><p><b>$19.</b> The free version is at the link too.</p><div class="box" style="text-align:center;font-weight:800">stonefamiliamedia.com/prompt-studio</div><p>What should we name him? 👇</p>`];
 const jha = [
-`<h1>Your crew needs a JHA before the job starts.</h1><p>You've got a phone, cold coffee, and <b class="gold">zero bars.</b> 📵</p>`,
-`<h2>Most JHA tools want:</h2><div class="list">❌ An account<br>❌ A monthly bill<br>❌ Wi-Fi on a job site 🙃</div>`,
-`<h2>This one <span class="gold">doesn't.</span></h2><div class="list">✅ Works offline in your browser<br>✅ Rates each step Low → Critical<br>✅ PPE picker<br>✅ Signatures + PDF export<br>✅ Data stays on your device</div>`,
-`<h2>Fill it in before the coffee's cold ☕</h2><div class="box"><div class="row"><span class="lab">Job step</span><span class="val">Cut rebar</span></div><div class="row"><span class="lab">Hazard</span><span class="val">Flying debris</span></div><div class="row"><span class="lab">Risk</span><span class="pill" style="background:#e8743b;color:#fff">HIGH</span></div><div class="row"><span class="lab">PPE</span><span class="val">Glasses, gloves</span></div><div class="row"><span class="lab">Signed</span><span class="val">✍️ 3 of 3 crew</span></div></div>`,
-`<h1><span class="gold">$9.99 once.</span> No monthly bill.</h1><p>Built by a 9-year Army veteran with 17 years in IT. Planning keeps people safe.</p><div class="box" style="text-align:center;font-weight:800;font-size:36px">stonefamiliamedia.com/safety-form</div>`];
+`<h1>Digging a trench today? 🕳️</h1><p>Read this <b class="gold">before</b> anybody hops in.</p>`,
+`<h2>5 feet or deeper?</h2><p>OSHA says it needs a <b class="gold">protective system</b>: sloping, shoring, or a trench box.</p><p>20 feet or deeper? An engineer designs it.</p>`,
+`<h2>4 feet or deeper?</h2><div class="list">🪜 A ladder or ramp within 25 ft of every worker<br>⛰️ Dirt piles + gear 2 ft back from the edge<br>👀 Inspected daily by a competent person</div>`,
+`<h2>Put it in your JHA ☕</h2><div class="box"><div class="row"><span class="lab">Job step</span><span class="val">Dig 6 ft trench</span></div><div class="row"><span class="lab">Hazard</span><span class="val">Cave-in</span></div><div class="row"><span class="lab">Risk</span><span class="pill" style="background:#b3261e;color:#fff">CRITICAL</span></div><div class="row"><span class="lab">Control</span><span class="val">Trench box, ladder</span></div><div class="row"><span class="lab">PPE</span><span class="val">Hard hat</span></div></div>`,
+`<h1><span class="gold">$9.99 once.</span> Works offline. No sign-up.</h1><p>Our Job Hazard Analysis form. What's the deepest trench you've worked in? 👇</p><div class="box" style="text-align:center;font-weight:800;font-size:36px">stonefamiliamedia.com/safety-form</div>`];
 (async()=>{
   const out=process.argv[2]||'/mnt/project-files/agents/posts-week-nov-2'; fs.mkdirSync(out,{recursive:true});
   const b=await chromium.launch(); const pg=await b.newPage({viewport:{width:1080,height:1350}});
-  for (const [name,set] of [['prompt-studio',prompt],['safety-form',jha]]) {
+  for (const [name,set] of [['pro-characters',prompt],['trench-safety',jha]]) {
     for (let i=0;i<set.length;i++){
       await pg.setContent(`<html><head><style>${css}</style></head><body>${deco}<div class="n">${i+1}/${set.length}</div><div class="wrap">${set[i]}</div>${foot}</body></html>`);
       await pg.waitForTimeout(150);
