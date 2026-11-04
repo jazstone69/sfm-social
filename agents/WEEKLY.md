@@ -1,6 +1,8 @@
 # Weekly run: Stone Familia Media research + social drafts
 
-Runs every Monday morning (America/Denver). Owner: Sage Stone, JStone_SFM@pm.me.
+Runs every Monday morning (America/Denver). Owner: Sage Stone.
+
+**Business email:** `jazstone69@gmail.com` (the lead/contact address and where the weekly email goes; to switch later, change it here and at the top of lead-catcher.md).
 Read results-check.md, research-agent.md, social-media-agent.md and lead-catcher.md in this folder first; they hold the business context and rules.
 
 ## Steps
@@ -18,7 +20,7 @@ Read results-check.md, research-agent.md, social-media-agent.md and lead-catcher
 8. **Weekly JHA blog post.** Write one new blog post (700-1000 words) showing the benefits of doing a Job Hazard Analysis, built on REAL, current, verifiable information found by web search this week. Good sources: OSHA news releases and enforcement cases (osha.gov/news), BLS injury and fatality data (bls.gov/iif), OSHA publication 3071, NIOSH, and reputable trade press. Each post takes one real angle (e.g. a recent OSHA citation that a JHA would have prevented, a new BLS statistic, a common hazard of the season like cold stress or ladder falls) and ends by showing how the Stone Familia Media JHA form helps (offline, Low to Critical risk rating, one-click PPE, running safety summary, signatures, PDF, private on device, $9.99 once, link https://www.stonefamiliamedia.com/product-store/p/job-hazard-analysis-form).
    Rules: cite every fact with a link; never invent incidents, numbers, or quotes; name companies only as they appear in public OSHA/government records and never name injured workers; don't repeat a topic already in `blogs/`; friendly, plain-spoken voice; include a title, meta description, suggested URL slug, and a "general information, not legal advice" line. Save to `blogs/<YYYY-MM-DD>-<slug>.md` and commit it.
 9. **Lead catcher.** Follow lead-catcher.md: find people who asked about the business in Gmail in the last 8 days and save a reply DRAFT for each in Gmail. Never send. Keep lead details out of the repo.
-10. **Email** JStone_SFM@pm.me via Gmail, subject "SFM weekly: leads, results, research, 2 posts, and JHA blog for week of <date>", HTML body with:
+10. **Email** the business email via Gmail, subject "SFM weekly: leads, results, research, 2 posts, and JHA blog for week of <date>", HTML body with:
    - "Leads this week" first, as described in lead-catcher.md,
    - "How last week's posts did" next, as described in results-check.md,
    - the research short version and growth ideas,
