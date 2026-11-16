@@ -4,8 +4,8 @@ Runs every Monday as part of WEEKLY.md, before the email step. Mailbox: the conn
 Job: find people who asked about Stone Familia Media in the last 7 days and leave a reply DRAFT for the owner in Gmail Drafts. It never sends.
 
 ## 1. Find leads
-The owner's business mail lives in Proton (privacysfm@pm.me and JStone_SFM@pm.me) and is auto-forwarded to this Gmail, so most leads arrive as forwarded copies. For each one, reply to the ORIGINAL sender (the person who wrote in), never to a pm.me address. Ignore Proton system mail (proton.me) and the owner's own weekly email.
-The owner BCCs this Gmail when replying from Proton, so messages FROM a pm.me address TO a lead are the owner's replies, not new leads. Use them in step 4.
+Since 2026-11-04 the contact/lead email is this Gmail (jazstone69@gmail.com) directly; Proton (privacysfm@pm.me, JStone_SFM@pm.me) is no longer used for leads, but older leads may still arrive as forwarded copies. For each one, reply to the ORIGINAL sender (the person who wrote in), never to a pm.me address. Ignore Proton system mail (proton.me) and the owner's own weekly email.
+Owner replies are now sent from this Gmail; older ones came from Proton, so messages FROM this Gmail or a pm.me address TO a lead are the owner's replies, not new leads. Use them in step 4.
 Search Gmail for the last 8 days (`newer_than:8d`), excluding the owner's own mail, promotions, social, updates and forums tabs, and automated senders (noreply, no-reply, notifications, newsletters, job alerts). Also include website notifications from stonefamiliamedia.com (form submissions, orders, booking requests) even if they land in Updates.
 Open each candidate with get_thread and keep it only if a real person is asking about one of:
 - Prompt Studio or Prompt Studio Pro ($19)
@@ -39,7 +39,7 @@ Using the Leads tab (dates count from the Date column, in America/Denver time):
 - **Gone quiet:** Status `Replied` and 5+ days old, and the Gmail thread has no newer message from the lead. Save ONE short check-in draft in that thread (create_draft, same rules as step 2, 30 to 70 words, friendly, no pressure, one link). Example tone: "Hey Sam, just checking in on the JHA form. Happy to answer anything, or no worries if the timing's off!"
 - One check-in per lead, ever. Before drafting, check the Notes column; if it already says "Follow-up drafted", skip. After drafting, add `Follow-up drafted <YYYY-MM-DD>` to the end of that row's Notes cell. That is the ONLY edit allowed to an existing row.
 - **Probably cold:** Status `Replied`, a follow-up was drafted 10+ days ago, and still no answer. Suggest in the email that the owner mark it `No sale`. Don't change it yourself.
-- **Auto-mark replies:** for each `New` row, search Gmail for a message from privacysfm@pm.me or JStone_SFM@pm.me to that lead's email, sent after the row's Date (these are the owner's BCC copies). If found, change Status from `New` to `Replied`. This is the only Status change allowed, and only from `New` to `Replied`. Do this before the checks above.
+- **Auto-mark replies:** for each `New` row, search Gmail for a message from me (or privacysfm@pm.me / JStone_SFM@pm.me) to that lead's email, sent after the row's Date (these are the owner's BCC copies). If found, change Status from `New` to `Replied`. This is the only Status change allowed, and only from `New` to `Replied`. Do this before the checks above.
 - When checking whether a lead has "gone quiet", count the owner's BCC copies too: the 5 days start from the owner's latest reply, and a newer message from the lead means they're not quiet.
 If the owner forgot to BCC, the Status column still wins: never mark someone Replied without a BCC copy, but trust a `Replied` the owner typed in.
 
